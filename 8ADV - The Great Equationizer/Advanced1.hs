@@ -1,4 +1,4 @@
-module P93 where
+module Main where
  
 import Control.Monad
 import Data.List
