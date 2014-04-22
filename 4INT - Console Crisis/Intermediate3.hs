@@ -27,4 +27,4 @@ mainHelper times = case times of
                  mainHelper $ t-1
 
 cost :: Integer -> Integer -> Integer
-cost n m = (max 0 $ n-m)*fromIntegral contrlCost + 15*(max 0 $ n-fromIntegral defPorts)
+cost n m = (max 0 $ n-m)*fromIntegral contrlCost + 15*(max 0 $ ceiling $ fromRational (fromIntegral (n-fromIntegral defPorts))/2)
